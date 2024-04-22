@@ -1,0 +1,22 @@
+<html>
+<script language="Javascript">
+function submitchk()
+{
+if (document.mform.starc.checked==true)
+   alert("you chose star")
+if(document.mform.zeec.checked==true)
+   alert("you chose zee")
+}
+</script>
+<body>
+<form name="mform">
+<input type="hidden" value=100>
+star
+<input type="checkbox" value='star' name="starc"><br>
+zee
+<input type="checkbox" value='zee' name="zeec">
+<br>
+<input type="button" value="enter" onclick="submitchk()">
+</form>
+</body>
+</html>

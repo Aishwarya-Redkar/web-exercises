@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+body{font-family:algerian;}
+table{font-size:80%;background:black;}
+a{color:black;text-decoration:none;font:bold;}
+a:hover{color:#606060}
+td.menu{background:lightblue}
+table.menu
+{
+font-size:100%;
+position:absolute;
+visibility:hidden;
+}
+</style>
+<script type="text/javascript">
+function showMenu(Menu)
+{
+document.getElementByld(Menu).style.visibility="visible";
+}
+function hideMenu(Menu)
+{
+document.getElementByld(Menu).style.visibility="hidden";
+}
+</script>
+</head>
+<body>
+<h3>Drop down menu</h3>
+<table width="170px">
+<tr bgcolor="#FF8080">
+<td onmouseover="showMenu('Menu')" onmouseout="hideMenu('Menu')">Menu<br>
+<table class="Menu" id="Menu" width="120">
+<tr><td class="Menu"><a href="indian.html">Indian</a></td></tr>
+<tr><td class="Menu"><a href="chinese.html">Chinese</a></td></tr>
+<tr><td class="Menu"><a href="italian.html">italian</a></td></tr>
+<tr><td class="Menu"><a href="continental.html">continental</a></td></tr>
+<tr><td class="Menu"><a href="american.html">american</a></td></tr>
+</table></td></tr></table></td></tr></table>
+<p>Mouse over these options to see the drop down menu</p>
+</body></html>

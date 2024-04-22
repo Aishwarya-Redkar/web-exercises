@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>
+Sample Javascript Calculator-basic arithmetic operations</title>
+<script language="javascript" type="text/javascript">
+function multiply()
+{
+a=Number(document.calculator.number1.value);
+b=Number(document.calculator.number2.value); 
+c=a*b;
+document.calculator.total.value=c;
+}
+</script>
+<script language="javascript" type="text/javascript">
+function addition()
+{
+a=Number(document.calculator.number1.value);
+b=Number(document.calculator.number2.value); 
+c=a+b;
+document.calculator.total.value=c;
+}
+</script>
+<script language="javascript" type="text/javascript">
+function substraction()
+{
+a=Number(document.calculator.number1.value);
+b=Number(document.calculator.number2.value); 
+c=a-b;
+document.calculator.total.value=c;
+}
+</script>
+<script language="javascript" type="text/javascript">
+function division()
+{
+a=Number(document.calculator.number1.value);
+b=Number(document.calculator.number2.value); 
+c=a/b;
+document.calculator.total.value=c;
+}
+</script></head><body>
+<form name="calculator">
+Number1:<input type="text" name="number1">
+Number2:<input type="text" name="number2">
+Get result<input type="text" name="total">
+<input type="button" value="ADD" onclick="javascript:addition();">
+<input type="button" value="SUB" onclick="javascript:substraction();">
+<input type="button" value="MUL" onclick="javascript:multiply();">
+<input type="button" value="DIV" onclick="javascript:division();">
+</form>
+</body></html>

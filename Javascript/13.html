@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+var isvalid=true;
+var sname=document.getElementByld("sname").value;
+alert("Name is "+sname)
+if(sname=="")
+{
+alert("name cannot be blank")
+isvalid=false;
+}
+return isvalid;
+}
+</script></head><body>
+<form name="myform" method="post">
+<input type="text" id="sname">
+<input type="submit" value="submit" onclick="validate();" ></form></body></html>

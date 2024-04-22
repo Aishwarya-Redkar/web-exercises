@@ -1,0 +1,39 @@
+<html>
+<head>
+<script language="javascript">
+function verify()
+{
+var t1=document.mform.num1.value;
+if(t1=="")
+{
+alert("please enter the number!!");
+}
+else
+{
+if(is NaN(t1)==true)
+alert("Enter a 7 digit number");
+else
+{
+if(t1.length==7)
+{
+if(t1.charAt(0)=="2")
+{
+alert("the telephone no. is"+t1);
+}
+else
+alert("the 1st no. should start with 2");
+}
+else
+{
+alert("please enter the proper phone no.");
+}
+}
+}}
+</script>
+</head>
+<body>
+<form name=mform>
+Telephone:<input type=text name=num1><br>
+<input type=submit value=submit onclick="verify()">
+</form></body>
+</html>

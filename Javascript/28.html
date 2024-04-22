@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Use of submit & reset</title>
+<script language="javascript">
+function sub()
+{
+alert("Your data is submitted")
+}
+function res()
+{
+alert("Re-enter your data")
+}
+</script>
+</head>
+<body>
+<form onsubmit="sub()" onreset="res()">
+name<input type=text name=yname value="Aishwarya Redkar"><br>
+<input type=submit name=submit value=submit>
+<input type=reset name=reset value=reset>
+</form>
+</body>
+</html>
